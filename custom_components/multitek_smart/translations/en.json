@@ -1,0 +1,40 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Multitek Smart Tablet",
+        "description": "Enter the IP address and port of your Multitek Smart Home tablet.",
+        "data": {
+          "tablet_ip": "Tablet IP Address",
+          "tablet_port": "Tablet Port"
+        }
+      },
+      "auth": {
+        "title": "Authentication Required",
+        "description": "The tablet at {tablet_ip} requires authentication. Please enter the API key.",
+        "data": {
+          "api_key": "API Key"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the tablet",
+      "invalid_auth": "Invalid API key",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "Device is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Multitek Smart Home Options",
+        "description": "Configure advanced options for the integration.",
+        "data": {
+          "api_key": "API Key"
+        }
+      }
+    }
+  }
+}
